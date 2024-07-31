@@ -3,7 +3,7 @@ import React from 'react'
 function Technologie({ pro }) {
     return (
         <>
-            <span className="inline-flex items-center justify-start mx-1  rounded-full bg-emerald-100 px-2.5 py-0.5 text-emerald-700">
+            <span className="inline-flex items-center justify-start mx-1  rounded-full bg-white px-2.5 py-0.5 text-[#036666]">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

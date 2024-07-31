@@ -8,9 +8,9 @@ export const projets = [
     image: Booki,
     name: "Booki",
     description:
-      "Site internet pour trouver des hébergements et activités dans une ville",
+      "Développer la page d'acceuil d'une agence de voyage en HTML & CSS",
     details:
-      "Dans ce projet l'objectif était de développer le site internet de la start-up Booki. Ici, nous avons développer nos compétences sur les languages de programmation HTML et CSS mais la notion de medias queries afin de rendre le site responsives et compatible avec toutes sortes d'écran (ordinateur , tablette, téléphone)",
+      "Dans ce projet, mon objectif était de concevoir le site internet de la start-up Booki. J'ai ainsi approfondi mes compétences en HTML et CSS, en mettant particulièrement l'accent sur les media queries pour garantir que le site soit réactif et adapté à tous les types d'écrans (ordinateur, tablette, téléphone).",
     date: "Janvier 2024",
     logiciel: ["HTML", "CSS"],
     github: "",
@@ -19,9 +19,9 @@ export const projets = [
   {
     image: Sophie,
     name: "Sophie Bluel",
-    description:
-      "Création d'une application mobile permettant aux utilisateurs de suivre leurs activités physiques, de définir des objectifs de fitness et de consulter des statistiques détaillées sur leurs progrès.",
-    details: "",
+    description: "Développer une page web dynamique en utilisant JavaScript.",
+    details:
+      "Ce projet m'a permis de renforcer mes connaissances en JavaScript. J'ai appris à implémenter du code dynamique, à gérer les connexions utilisateur et à créer des modales.",
     date: "Avril 2024",
     logiciel: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/prescilliao/Sophie-Bluel",
@@ -31,8 +31,9 @@ export const projets = [
     image: Kasa,
     name: "Kasa",
     description:
-      "Développement d'une plateforme de réseautage social permettantaux utilisateurs de créer des profils, de publier des mises à jour, de suivred'autres utilisateurs et d'envoyer des messages privés.",
-    details: "",
+      "Développer une application de location immobilière avec React",
+    details:
+      "Dans ce projet, j'ai appris à utiliser React, notamment pour son routage et la gestion des composants. J'ai également acquis des compétences pour gérer le changement de pages de manière dynamique, notamment en utilisant des identifiants (ID).",
     date: "Mai 2024",
     logiciel: ["HTML", "Sass", "React"],
     github: "https://github.com/prescilliao/Kasa_",
@@ -42,8 +43,9 @@ export const projets = [
     image: ArgentBank,
     name: "Argent Bank",
     description:
-      "Développement d'un tableau de bord pour la gestion de projets, permettant aux utilisateurs de planifier des tâches, de suivre l'avancement des projets et de collaborer avec les membres de l'équipe.",
-    details: "",
+      "Implémenter le fron-end d'une application bancaire avec React.",
+    details:
+      "Ce projet m'a permis d'apprendre à utiliser Redux pour gérer l'état global de l'application grâce aux actions et aux reducers. J'ai également acquis une vision sur l'écriture de routes API en utilisant un fichier YAML.",
     date: "Juillet 2024",
     logiciel: ["HTML", "CSS", "React", "Redux"],
     github: "https://github.com/prescilliao/ArgentBank",

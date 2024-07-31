@@ -9,12 +9,12 @@ const Navbar = () => {
     };
     return (
         <>
-            <nav className="#f8fafc text-[#AE5E45]">
+            <nav className=" text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center justify-between  w-full">
                             <div className="flex-shrink-0">
-                                <Link to="/" className="text-xl font-bold">
+                                <Link to="/" className="text-xl text-[#358F80] font-bold">
                                     Prescillia.O
                                 </Link>
                             </div>
@@ -22,25 +22,31 @@ const Navbar = () => {
                                 <div className="ml-10 flex items-baseline space-x-4 font-body">
                                     <Link
                                         to="/"
-                                        className="bg-[#F0E0D0] hover:bg-[#AE5E45] hover:text-[#F0E0D0] px-3 py-2 rounded-md text-sm font-medium"
+                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Acceuil
                                     </Link>
                                     <a
-                                        href="/about"
-                                        className="bg-[#F0E0D0] hover:bg-[#AE5E45] hover:text-[#F0E0D0] px-3 py-2 rounded-md text-sm font-medium"
+                                        href="#parcours"
+                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Parcours
                                     </a>
                                     <a
-                                        href="/services"
-                                        className="bg-[#F0E0D0] hover:bg-[#AE5E45] hover:text-[#F0E0D0] px-3 py-2 rounded-md text-sm font-medium"
+                                        href="#competences"
+                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                    >
+                                        Compétences
+                                    </a>
+                                    <a
+                                        href="#projets"
+                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Projets
                                     </a>
                                     <a
-                                        href="/contact"
-                                        className="bg-[#F0E0D0] hover:bg-[#AE5E45] hover:text-[#F0E0D0] px-3 py-2 rounded-md text-sm font-medium"
+                                        href="#contact"
+                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Contact
                                     </a>
@@ -126,7 +132,7 @@ const Navbar = () => {
                         </a>
                     </div>
                 </div>
-            </nav>
+            </nav >
         </>
     );
 };

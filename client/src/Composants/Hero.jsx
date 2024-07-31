@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Moi from '../../public/images/Me.jpg'
+import Moi from '../../public/images/Moi.png'
 
 const heroVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -17,7 +17,7 @@ const heroVariants = {
 const Hero = () => {
     return (
         <motion.div
-            className="flex justify-center text-[#AE5E45] items-center bg-[#f0e0d04a] shadow-lg"
+            className="flex justify-center text-white items-center bg-[#99e2b4ac] shadow-lg"
             initial="visible"
             animate="visible"
             variants={heroVariants}

@@ -5,11 +5,11 @@ import DataParcours from '../../DataParcours'
 
 function Parcours() {
     return (
-        <div>
-            <section className="bg-white-100 font-body  bg-gradient-to-b from-[#F0E0D0] to-[#E7CEB9] ">
+        <div id='parcours'>
+            <section className="bg-white-100 font-body  bg-white">
                 <div className="flex justify-evenly flex-col lg:px-8 lg:py-16 mx-auto max-w-screen-xl h-[calc(100vh-598px)]">
                     <div className="mx-auto max-w-lg text-center">
-                        <h2 className="text-5xl mb-5 text-[#AE5E45] font-bold ">Parcours </h2>
+                        <h2 className="text-5xl mb-5 text-[#358F80] font-bold ">Parcours </h2>
 
                         {/* <p className="mt-4 text-gray-300">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.

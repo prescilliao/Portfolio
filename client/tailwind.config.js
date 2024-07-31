@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         body: ["Montserrat"],
       },
+      backgroundImage: {
+        "radial-gradient": "radial-gradient(circle, #67B99A, #248277)",
+      },
     },
   },
   plugins: [require("daisyui")],

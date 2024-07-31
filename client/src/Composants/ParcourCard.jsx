@@ -4,7 +4,7 @@ function ParcourCard({ parcour }) {
     return (
         <>
             <a
-                className=" bg-[#C9866F] rounded-xl p-8 drop-shadow-[0_25px_15px_rgba(0,0,0,0.15)] transition hover:ring-[#C9866F] hover:shadow-black-500/10"
+                className=" bg-gradient-to-b from-[#99E2B4] to-[#469D89] rounded-xl p-8 drop-shadow-[0_25px_15px_rgba(0,0,0,0.15)] transition hover:ring-[#C9866F] hover:shadow-black-500/10"
                 href="#"
             >
                 <svg

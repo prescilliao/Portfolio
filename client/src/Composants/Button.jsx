@@ -6,7 +6,7 @@ const Button = () => {
         <div className="mt-12 text-center">
             <motion.a
                 href="#"
-                className="inline-block rounded bg-[#C9866F] hover:bg-[#AE5E45] px-12 py-3 text-sm font-medium text-white transition focus:outline-none font-body"
+                className="inline-block rounded bg-[#99E2B4] hover:bg-[#469D89] px-12 py-3 text-sm font-medium text-white transition focus:outline-none font-body"
                 whileHover={{
                     scale: 1.1,
                     rotate: [0, 5, -5, 5, -5, 5, -5, 0],

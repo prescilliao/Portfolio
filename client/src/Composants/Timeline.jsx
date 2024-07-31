@@ -14,11 +14,11 @@ function Timeline({ projet }) {
                 }
                 className="vertical-timeline-element--work"
                 contentStyle={{
-                    background: '#C9866F', color: '#000'
+                    background: '#67B99A', color: '#67B99A'
                 }}
-                contentArrowStyle={{ borderRight: '7px solid  #C9866F' }}
+                contentArrowStyle={{ borderRight: '7px solid  #67B99A' }}
                 date={projet.date}
-                iconStyle={{ background: '#C9866F', color: '#C9866F' }}
+                iconStyle={{ background: '#67B99A', color: '#67B99A' }}
                 icon={<img className='rounded-full h-full bg-cover w-full' src={projet.image} />}
 
             >
