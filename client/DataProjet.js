@@ -1,7 +1,9 @@
-import Booki from "./public/images/booki.png";
-import Sophie from "./public/images/SophieBluel.png";
-import Kasa from "./public/images/Kasa.png";
-import ArgentBank from "./public/images/ArgentBank.png";
+import Booki from "./src/images/booki.png";
+import Sophie from "./src/images/SophieBluel.png";
+import Kasa from "./src/images/Kasa.png";
+import ArgentBank from "./src/images/ArgentBank.png";
+import Ohmyfood from "./src/images/Ohmyfood.png";
+import Printit from "./src/images/Printit.png";
 
 export const projets = [
   {
@@ -17,6 +19,29 @@ export const projets = [
     id: 1,
   },
   {
+    image: Ohmyfood,
+    name: "Oh my Food",
+    description:
+      "Améliorez l'interface d'un site mobile avec des animations CSS",
+    details:
+      "Dans ce projet, j'ai eu l'opportunité de travailler sur une approche mobile-first. J'ai également pu approfondir mes compétences en CSS, découvrir SASS, et explorer les animations pour les sites web.",
+    date: "Février 2024",
+    logiciel: ["HTML", "CSS", "SASS"],
+    github: "https://github.com/prescilliao/ohmyfood",
+    id: 2,
+  },
+  {
+    image: Printit,
+    name: "Print it",
+    description: "Premiers pas sur le langage JavaScript",
+    details:
+      "Ce projet m'a permis d'apprendre à utiliser les fondamentaux du langage de programmation JavaScript en créant un carrousel.",
+    date: "Mars 2024",
+    logiciel: ["HTML", "JS"],
+    github: "https://github.com/prescilliao/Prin-it",
+    id: 3,
+  },
+  {
     image: Sophie,
     name: "Sophie Bluel",
     description: "Développer une page web dynamique en utilisant JavaScript.",
@@ -25,7 +50,7 @@ export const projets = [
     date: "Avril 2024",
     logiciel: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/prescilliao/Sophie-Bluel",
-    id: 2,
+    id: 4,
   },
   {
     image: Kasa,
@@ -37,7 +62,7 @@ export const projets = [
     date: "Mai 2024",
     logiciel: ["HTML", "Sass", "React"],
     github: "https://github.com/prescilliao/Kasa_",
-    id: 3,
+    id: 5,
   },
   {
     image: ArgentBank,
@@ -49,6 +74,6 @@ export const projets = [
     date: "Juillet 2024",
     logiciel: ["HTML", "CSS", "React", "Redux"],
     github: "https://github.com/prescilliao/ArgentBank",
-    id: 4,
+    id: 6,
   },
 ];

@@ -9,7 +9,7 @@ const DataParcours = [
   {
     niveau: "Baccalauréat",
     spécialité: "Science économique et sociale",
-    établissement: "Lycéé Georges Brassens",
+    établissement: "Lycée Georges Brassens",
     ville: "Evry-Courcouronnes 91000",
     annéeObtention: 2020,
   },

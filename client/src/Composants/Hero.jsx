@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Moi from '../../public/images/Moi.png'
+import Moi from '../images/Moi.png'
 
 const heroVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -23,14 +23,14 @@ const Hero = () => {
             variants={heroVariants}
         >
             <motion.div
-                className="hero-content flex-col lg:flex-row px-40 my-10"
+                className="hero-content flex-col lg:flex-row xl:px-40 my-10"
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 1 }}
             >
                 <motion.img
                     src={Moi}
-                    className="max-w-sm rounded-full shadow-2xl mask mask-circle"
+                    className="max-w-[200px] max-h-[200px] rounded-full shadow-2xl mask mask-circle"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1, duration: 1 }}

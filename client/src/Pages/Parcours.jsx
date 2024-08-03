@@ -6,8 +6,8 @@ import DataParcours from '../../DataParcours'
 function Parcours() {
     return (
         <div id='parcours'>
-            <section className="bg-white-100 font-body  bg-white">
-                <div className="flex justify-evenly flex-col lg:px-8 lg:py-16 mx-auto max-w-screen-xl h-[calc(100vh-598px)]">
+            <section className="bg-white-100 font-body h-max bg-white min-[320px]:py-8 sm:py-10 md:py-14">
+                <div className="flex justify-evenly flex-col lg:px-8 lg:py-16 mx-auto max-w-screen-xl">
                     <div className="mx-auto max-w-lg text-center">
                         <h2 className="text-5xl mb-5 text-[#358F80] font-bold ">Parcours </h2>
 

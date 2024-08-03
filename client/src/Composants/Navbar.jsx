@@ -1,55 +1,72 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
+import logo from '../images/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <>
-            <nav className=" text-white">
+            <nav className="text-white shadow-lg relative">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-                        <div className="flex items-center justify-between  w-full">
+                        <div className="flex items-center justify-between w-full">
                             <div className="flex-shrink-0">
                                 <Link to="/" className="text-xl text-[#358F80] font-bold">
-                                    Prescillia.O
+                                    <img className="h-16 w-16" src={logo} alt="Logo" />
                                 </Link>
                             </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4 font-body">
-                                    <Link
-                                        to="/"
-                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Acceuil
-                                    </Link>
-                                    <a
-                                        href="#parcours"
-                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Parcours
-                                    </a>
-                                    <a
-                                        href="#competences"
-                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Compétences
-                                    </a>
-                                    <a
-                                        href="#projets"
-                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Projets
-                                    </a>
-                                    <a
-                                        href="#contact"
-                                        className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
-                                    >
-                                        Contact
-                                    </a>
+                                    {isHomePage ? (
+                                        <>
+                                            <Link
+                                                to="/"
+                                                className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                            >
+                                                Accueil
+                                            </Link>
+                                            <a
+                                                href="#parcours"
+                                                className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                            >
+                                                Parcours
+                                            </a>
+                                            <a
+                                                href="#competences"
+                                                className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                            >
+                                                Compétences
+                                            </a>
+                                            <a
+                                                href="#projets"
+                                                className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                            >
+                                                Projets
+                                            </a>
+                                            <a
+                                                href="#contact"
+                                                className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                            >
+                                                Contact
+                                            </a>
+                                        </>
+                                    ) : (
+                                        <Link
+                                            to="/"
+                                            className="bg-[#99E2B4] hover:bg-[#469D89] px-3 py-2 rounded-md text-sm font-medium"
+                                        >
+                                            Accueil
+                                        </Link>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -57,43 +74,15 @@ const Navbar = () => {
                             <button
                                 onClick={toggleMenu}
                                 type="button"
-                                className="bg-[#F0E0D0] p-2 rounded"
+                                className="bg-[#99E2B4] p-2 rounded"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
                             >
                                 <span className="sr-only">Ouvrir le menu</span>
                                 {!isOpen ? (
-                                    <svg
-                                        className="block h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M4 6h16M4 12h16m-7 6h7"
-                                        />
-                                    </svg>
+                                    <IoMdMenu />
                                 ) : (
-                                    <svg
-                                        className="block h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M6 18L18 6M6 6l12 12"
-                                        />
-                                    </svg>
+                                    <IoCloseSharp />
                                 )}
                             </button>
                         </div>
@@ -105,34 +94,49 @@ const Navbar = () => {
                         } md:hidden h-screen flex justify-center items-center`}
                     id="mobile-menu"
                 >
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a
-                            href="/"
-                            className=" block px-5 py-2 rounded-md text-xl font-medium "
-                        >
-                            Acceuil
-                        </a>
-                        <a
-                            href="/about"
-                            className=" block px-5 py-2 rounded-md text-xl font-medium"
-                        >
-                            Parcours
-                        </a>
-                        <a
-                            href="/services"
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-[#99E2B4]">
+                        <Link
+                            to="/"
                             className="block px-5 py-2 rounded-md text-xl font-medium"
+                            onClick={toggleMenu}
                         >
-                            Projets
-                        </a>
-                        <a
-                            href="/contact"
-                            className="block px-5 py-2 rounded-md text-xl font-medium"
-                        >
-                            Contact
-                        </a>
+                            Accueil
+                        </Link>
+                        {isHomePage && (
+                            <>
+                                <a
+                                    href="#parcours"
+                                    className="block px-5 py-2 rounded-md text-xl font-medium"
+                                    onClick={toggleMenu}
+                                >
+                                    Parcours
+                                </a>
+                                <a
+                                    href="#competences"
+                                    className="block px-5 py-2 rounded-md text-xl font-medium"
+                                    onClick={toggleMenu}
+                                >
+                                    Compétences
+                                </a>
+                                <a
+                                    href="#projets"
+                                    className="block px-5 py-2 rounded-md text-xl font-medium"
+                                    onClick={toggleMenu}
+                                >
+                                    Projets
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="block px-5 py-2 rounded-md text-xl font-medium"
+                                    onClick={toggleMenu}
+                                >
+                                    Contact
+                                </a>
+                            </>
+                        )}
                     </div>
                 </div>
-            </nav >
+            </nav>
         </>
     );
 };
