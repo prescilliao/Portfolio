@@ -5,7 +5,7 @@ const Button = () => {
     return (
         <div className="mt-12 text-center">
             <motion.a
-                href="/moncv.pdf"
+                href="/CV082024_De_Oliveira_Prescillia.pdf"
                 className="inline-block rounded ring ring-[#469D89] bg-[#99E2B4] hover:bg-[#469D89] px-12 py-3 text-sm font-medium text-white transition focus:outline-none font-body"
                 whileHover={{
                     scale: 1.1,

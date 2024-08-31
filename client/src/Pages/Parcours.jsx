@@ -10,12 +10,6 @@ function Parcours() {
                 <div className="flex justify-evenly flex-col lg:px-8 lg:py-16 mx-auto max-w-screen-xl">
                     <div className="mx-auto max-w-lg text-center">
                         <h2 className="text-5xl mb-5 text-[#358F80] font-bold ">Parcours </h2>
-
-                        {/* <p className="mt-4 text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
-              fugit consequuntur saepe laborum.
-            </p> */}
                     </div>
 
                     <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
